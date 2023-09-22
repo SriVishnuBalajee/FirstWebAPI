@@ -70,7 +70,7 @@ public partial class NorthwindContext : DbContext
     public virtual DbSet<Territory> Territories { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("name=NWinConnection");
+        => optionsBuilder.UseSqlServer("server=200411LTP2869\\SQLEXPRESS;database=Northwind;integrated security=true;Encrypt=false;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
